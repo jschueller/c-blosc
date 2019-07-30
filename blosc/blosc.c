@@ -57,7 +57,7 @@
 #endif  /* _WIN32 */
 
 /* Include the win32/pthread.h library for all the Windows builds. See #224. */
-#if defined(_WIN32)
+#if defined(_MSC_VER)
   #include "win32/pthread.h"
   #include "win32/pthread.c"
 #else
